@@ -1,34 +1,37 @@
-#nav_bar {
-  overflow: hidden;
-}
-
-#nav_bar .navigation {
-  display: inline-block;
-  list-style-type: none;
-  margin: 5px 5px;
-  color: black;
+a {
   text-decoration: none;
+  margin: 0 10px;
+  cursor: pointer;
 }
 
-.#nav_bar .header {
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  align-items: center;
+  padding: 15px 15px;
+  justify-content: flex-end;
+}
+
+li {
+  display: inline-flex;
+  flex-flow: row;
+  list-style-type: none;
+  padding: 0;
   float: right;
-  list-style-type: none;
 }
 
-#footer {
-  position: absolute;
-  overflow: hidden;
-  background-color: grey;
-  width: 100%;
-  bottom: 0;
+.left {
+  float: left;
 }
 
-#footer .foot {
-  display: inline-block;
-  list-style-type: none;
-  margin: 8px 8px;
+.right {
+  margin-left: auto;
+}
+
+header a {
   color: black;
-  text-decoration: none;
 }
 
 .centerImage {
@@ -36,15 +39,64 @@
   margin-left: auto;
   margin-right: auto;
 }
-.search{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
+.search {
+  border: 1px solid black;
+  outline: none;
+  font-size: 17px;
+  width: 500px;
+  padding-left: 10px;
+  height: 30px;
+  line-height: 30px;
+  align-items: center;
+  border-radius: 45px;
+  display: flex;
+  justify-content: center;
 }
-.searchBox{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;  
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#container .searchBox {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(100, 100, 100);
+  font-size: 15px;
+  background-color: rgb(244, 244, 244);
+  margin: 30px 5px;
+  height: 40px;
+  width: 140px;
+  border: none;
+  border-radius: 5px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  background-color: rgb(244, 244, 244);
+  padding: 12px 20px;
+  border-top: solid 1px;
+  border-top-color: rgb(220, 220, 220);
+}
+#rightLinks {
+  float: right;
+  margin-right: 30px;
+}
+
+#LeftLinks {
+  margin-left: 30px;
 }
