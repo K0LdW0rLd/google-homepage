@@ -91,6 +91,9 @@ footer {
   padding: 12px 20px;
   border-top: solid 1px;
   border-top-color: rgb(220, 220, 220);
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 #rightLinks {
   float: right;
