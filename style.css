@@ -108,3 +108,7 @@ body {
    padding:0;
    height:100%;
 }
+#bottom {
+   min-height:100%;
+   position:relative;
+}
